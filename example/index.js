@@ -9,7 +9,7 @@ const sequelizeIterate = require("../lib");
         batch_size: 10,
         onItem: async user => {
             await doSomethingWithTheUser(user)
-        }
+        },
         onBatch: async batchOfUsers => {
             await doSomethingWithTheBatchOfUsers(batchOfUsers)
         }
